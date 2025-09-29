@@ -3,8 +3,7 @@ services:
     name: libretranslate
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
-    autoDeploy: true
+    dockerImage: libretranslate/libretranslate:latest
     healthCheckPath: /
     envVars:
       - key: LT_LOAD_ONLY
